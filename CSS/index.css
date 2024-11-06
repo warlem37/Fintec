@@ -9,6 +9,15 @@ body {
     margin:0;
 }
 
+#segmento1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.Titulo{
+    font-weight: bold;
+}
+
 /* --- //////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////// --- */
 
 header{
@@ -106,10 +115,8 @@ img {
 }
 
 .slideshow-container {
-    top: 10vh;
-    max-width: 1000px;
+    top: 5vh;
     position: relative;
-    margin: auto;
 }
 
 .prev, .next {
@@ -148,4 +155,8 @@ img {
 
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
+}
+
+hr{
+    top: 50px;
 }
