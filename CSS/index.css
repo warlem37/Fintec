@@ -28,7 +28,6 @@ header{
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
 }
 
 a{
@@ -40,23 +39,25 @@ li{
     display: inline-block;
 }
 
-#NomeEmpresa{
+#LogoEmpresa{
     display: inline-block;
     margin-left: 10px;
     font-size: 10px;
     height: 50px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
 }
 
+#NomeEmpresa{
+    display: flex;
+    color: white;
+    font-size: small;
+}
 .bloco{
     position: absolute;
     right: 75vh;
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #0069B1;
+    background-color: #442434;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -68,7 +69,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #00B0B9;
+    background-color: #6B2928;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -80,7 +81,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #e36060;
+    background-color: #AC3015;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -92,7 +93,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #caaf2b;
+    background-color: #D73508;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -155,8 +156,4 @@ img {
 
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
-}
-
-hr{
-    top: 50px;
 }
