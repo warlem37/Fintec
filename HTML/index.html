@@ -14,7 +14,8 @@
     <body>
 
         <header>
-                <a href="#" id="NomeEmpresa"><h1>Backdoor</h1></a>
+                <a href="#" id="LogoEmpresa"><img src="../IMAGEM/cover2.png" alt="Logo" style="height: 50px; width: 50px;"></a>
+                <h1 id="NomeEmpresa">Backdoor</h1>
                 <div class="bloco positivo"></div>
                 <div class="bloco2 positivo"></div>
                 <div class="bloco3 positivo"></div>
@@ -26,14 +27,40 @@
                 </ul>
         </header>
 
+<!--//////////////////////////////////////////////////////// SCRIPT ////////////////////////////////////////////////////////-->
+        
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slides[slideIndex-1].style.display = "block";  
+            }
+                </script>
+
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <img src="../IMAGEM/images.jfif" style="width:100%; height: 500px;">
+                <img src="../IMAGEM/img1.jpg" style="width:100%; height: 500px;">
             </div>
 
             <div class="mySlides fade">
-                <img src="../IMAGEM/images (1).jfif" style="width:100%; height: 500px;">
+                <img src="../IMAGEM/img2.jpg" style="width:100%; height: 500px;">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -49,30 +76,5 @@
                 financeiras ou até mesmo realizem ações que possam prejudicá-las.</p>
         </article>
 
-<!--//////////////////////////////////////////////////////// SCRIPT ////////////////////////////////////////////////////////-->
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            slides[slideIndex-1].style.display = "block";  
-            }
-        </script>
     </body>
 </html> 
