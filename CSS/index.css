@@ -9,13 +9,13 @@
 /* --- //////////////////////////////////////////////////////// BODY //////////////////////////////////////////////////////// --- */
 
 body {
-    font-family: Verdana, sans-serif; 
+    font-family: monospace; 
     margin:0;
 }
 #segmento1{
     display: block;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
 }
 .Titulo{
     font-size: 40px;
@@ -23,7 +23,36 @@ body {
     font-family: Vogue;
 }
 #SubTitulo{
-    font-size: 20px;
+    font-size: 30px;
+    text-align: justify;
+}
+#Circulos{
+    justify-content: space-between;
+    width: 60px;
+}
+#Circulo1{
+    background-color: #0069B1;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+#Circulo2{
+    background-color: #00969E;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+#Circulo3{
+    background-color: #E36060;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+#Circulo4{
+    background-color: #CAAF2B;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
 }
 
 /* --- //////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////// --- */
