@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box
 }
+@font-face {
+    font-family: Vogue;
+    src: url(../FONTES/Vogue.ttf);
+}
 
 /* --- //////////////////////////////////////////////////////// BODY //////////////////////////////////////////////////////// --- */
 
@@ -10,11 +14,16 @@ body {
 }
 #segmento1{
     display: block;
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    margin-left: 10%;
 }
 .Titulo{
+    font-size: 40px;
     font-weight: bold;
+    font-family: Vogue;
+}
+#SubTitulo{
+    font-size: 20px;
 }
 
 /* --- //////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////// --- */
@@ -29,10 +38,15 @@ header{
 	justify-content: space-between;
 	align-items: center;
 }
+#TituloInicio{
+	display: inline-block;
+	flex-direction: column;
+	color: white;
+    justify-content: left;
+}
 
 a{
     color: white;
-    text-decoration: none;
 }
 
 li{
@@ -42,13 +56,19 @@ li{
 #NomeEmpresa{
     display: inline-block;
     color: white;
-    font-size: 28px;
+    font-family: Vogue;
+    height: 20px;
+    margin-top: 10%;
+    margin-bottom: 0px;
 }
 #LogoEmpresa{
-    margin-top: -33px;
+    padding-bottom: 9px;
     display: inline-block;
     margin-left: 10px;
-    height: 50px;
+    margin-top: 0px;
+}
+.SubTituloInicio:hover{
+    text-decoration: underline white 5px;
 }
 
 .bloco{
@@ -118,6 +138,7 @@ img {
 .slideshow-container {
     top: 5vh;
     position: relative;
+    margin-bottom: 80px;
 }
 
 .prev, .next {
