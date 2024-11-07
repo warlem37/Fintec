@@ -207,7 +207,3 @@ img {
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
 }
-
-hr{
-    top: 50px;
-}
