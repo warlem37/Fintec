@@ -8,7 +8,6 @@ body {
     font-family: Verdana, sans-serif; 
     margin:0;
 }
-
 #segmento1{
     display: block;
     justify-content: center;
@@ -28,6 +27,7 @@ header{
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 }
 
 a{
@@ -39,25 +39,25 @@ li{
     display: inline-block;
 }
 
+#NomeEmpresa{
+    display: inline-block;
+    color: white;
+    font-size: 28px;
+}
 #LogoEmpresa{
+    margin-top: -33px;
     display: inline-block;
     margin-left: 10px;
-    font-size: 10px;
     height: 50px;
 }
 
-#NomeEmpresa{
-    display: flex;
-    color: white;
-    font-size: small;
-}
 .bloco{
     position: absolute;
     right: 75vh;
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #442434;
+    background-color: #0069B1;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -69,7 +69,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #6B2928;
+    background-color: #00B0B9;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -81,7 +81,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #AC3015;
+    background-color: #e36060;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -93,7 +93,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #D73508;
+    background-color: #caaf2b;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -156,4 +156,8 @@ img {
 
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
+}
+
+hr{
+    top: 50px;
 }
