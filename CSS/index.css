@@ -26,6 +26,13 @@ body {
     font-size: 30px;
     text-align: justify;
 }
+.SubTituloInicio{
+    font-size: 17px;
+}
+.SubTituloInicio:hover{
+    color: #F13800;
+    transition: 0.5s;
+}
 #Circulos{
     justify-content: space-between;
     width: 60px;
