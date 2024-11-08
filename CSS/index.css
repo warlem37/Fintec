@@ -31,25 +31,25 @@ body {
     width: 60px;
 }
 #Circulo1{
-    background-color: #0069B1;
+    background-color: #F13800;
     border-radius: 50%;
     width: 10px;
     height: 10px;
 }
 #Circulo2{
-    background-color: #00969E;
+    background-color: #C3330E;
     border-radius: 50%;
     width: 10px;
     height: 10px;
 }
 #Circulo3{
-    background-color: #E36060;
+    background-color: #802B22;
     border-radius: 50%;
     width: 10px;
     height: 10px;
 }
 #Circulo4{
-    background-color: #CAAF2B;
+    background-color: #4E2531;
     border-radius: 50%;
     width: 10px;
     height: 10px;
@@ -96,9 +96,6 @@ li{
     margin-left: 10px;
     margin-top: 0px;
 }
-.SubTituloInicio:hover{
-    text-decoration: underline white 5px;
-}
 
 .bloco{
     position: absolute;
@@ -106,7 +103,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #0069B1;
+    background-color: #F13800;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -118,7 +115,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #00B0B9;
+    background-color: #C3330E;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -130,7 +127,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #e36060;
+    background-color: #802B22;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -142,7 +139,7 @@ li{
     bottom: 44px;
     width: 240px;
     height: 10px;
-    background-color: #caaf2b;
+    background-color: #4E2531;
     -webkit-transform: skew(0deg);
     -ms-transform: skew(0deg);
     transform: skew(0deg);
@@ -162,6 +159,10 @@ li{
 
 img {
     vertical-align: middle;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(255,255,255,0) 48%, rgba(2,2,2,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(255,255,255,0) 48%,rgba(2,2,2,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(255,255,255,0) 48%,rgba(2,2,2,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#020202',GradientType=1 ); /* IE6-9 */
 }
 
 .slideshow-container {
@@ -183,6 +184,7 @@ img {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: rgba(0,0,0, 0.8);
 }
 
 .next {
@@ -190,13 +192,9 @@ img {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @keyframes fade {
