@@ -12,7 +12,7 @@ body {
     font-family: monospace; 
     margin:0;
 }
-#segmento1{
+.segmento1{
     display: block;
     width: 90%;
     margin-left: 5%;
@@ -61,6 +61,10 @@ body {
     width: 10px;
     height: 10px;
 }
+#BlocoPreto{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.938), rgb(0, 0, 0));
+    width: 100%;
+}
 
 /* --- //////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////// --- */
 
@@ -68,7 +72,7 @@ header{
     background-color: black;
     width: 100%;
     height: 50px;
-    position: fixed;
+    position:relative;
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -169,7 +173,6 @@ img {
 }
 
 .slideshow-container {
-    top: 5vh;
     position: relative;
     margin-bottom: 80px;
 }
@@ -207,4 +210,11 @@ img {
 
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
+}
+
+/* --- //////////////////////////////////////////////////////// SLIDESHOW //////////////////////////////////////////////////////// --- */
+
+footer{
+    color: white;
+    background-color: black;
 }
