@@ -72,7 +72,7 @@ header{
     background-color: black;
     width: 100%;
     height: 50px;
-    position:relative;
+    position:static;
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -83,6 +83,7 @@ header{
 	flex-direction: column;
 	color: white;
     justify-content: left;
+    line-height: 50%;
 }
 
 a{
@@ -212,9 +213,24 @@ img {
     .prev, .next,.text {font-size: 11px}
 }
 
-/* --- //////////////////////////////////////////////////////// SLIDESHOW //////////////////////////////////////////////////////// --- */
+/* --- //////////////////////////////////////////////////////// FOOTER //////////////////////////////////////////////////////// --- */
 
 footer{
+    padding: 20px;
+    margin-bottom: -20px;
     color: white;
     background-color: black;
+}
+#TituloRodape{
+    font-size: 27px;
+    font-weight: bold;
+}
+#RedeSocial{
+    display: flex;
+    width: 180px;
+    text-decoration: none;
+    line-height: 50%;
+}
+.SubTituloRodape{
+    color: white;
 }
