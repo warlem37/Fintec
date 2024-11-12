@@ -36,31 +36,31 @@ body {
 }
 #Circulos{
     justify-content: space-between;
-    width: 60px;
+    width: 40px;
 }
 #Circulo1{
     background-color: #F13800;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
 }
 #Circulo2{
     background-color: #C3330E;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
 }
 #Circulo3{
     background-color: #802B22;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
 }
 #Circulo4{
     background-color: #4E2531;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
 }
 #BlocoPreto{
     background: linear-gradient(90deg,rgba(0, 0, 0, 0.938), rgb(0, 0, 0));
@@ -74,10 +74,19 @@ body {
     margin-bottom: 50px;
 }
 .Info{
-    background-color: black;
+    background-image: url("../IMAGEM/Design\ sem\ nome.png");
+    box-shadow: rgba(0, 0, 0, 0.453) 0px 5px 15px;
     width: 37vh;
     height: 100%;
     border-radius: 20px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#TextoInfo{
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 /* --- //////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////// --- */
