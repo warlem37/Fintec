@@ -65,6 +65,7 @@ body {
 #BlocoPreto{
     background: linear-gradient(90deg,rgba(0, 0, 0, 0.938), rgb(0, 0, 0));
     width: 100%;
+    color: white;
 }
 #ConjuntoInfo{
     display:flex;
@@ -74,19 +75,24 @@ body {
     margin-bottom: 50px;
 }
 .Info{
-    background-image: url("../IMAGEM/Design\ sem\ nome.png");
-    box-shadow: rgba(0, 0, 0, 0.453) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(28, 28, 28, 0.3) 10px 10px, rgba(89, 89, 89, 0.2) 15px 15px, rgba(142, 142, 142, 0.1) 20px 20px, rgba(220, 220, 220, 0.05) 25px 25px;
     width: 37vh;
     height: 100%;
     border-radius: 20px;
     text-decoration: none;
+    overflow: hidden;
+}
+.FundoInfo{
+    background-image: url("../IMAGEM/Design\ sem\ nome.png");
     background-repeat: no-repeat;
     background-size: cover;
-}
-#TextoInfo{
     width: 100%;
-    font-size: 35px;
-    font-weight: bold;
+    height: 100%;
+    transition: all .3s ease;
+}
+.FundoInfo:hover{
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
 }
 
 /* --- //////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////// --- */
