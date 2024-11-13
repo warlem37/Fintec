@@ -4,10 +4,16 @@
 <!--//////////////////////////////////////////////////////// HEAD ////////////////////////////////////////////////////////-->
 
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../CSS/index.css">
         <link rel="stylesheet" media="(max-width: 1440px)" href="../CSS/indexMediaPc.css">
+        <link rel="stylesheet" media="(max-width: 469px)" href="../CSS/indexMediaCell.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
         <link rel="icon" href="../IMAGEM/LogoTransp2.jpg" type="image/png">
         <title>Backdoor: Segurança, confiabilidade e suporte</title>
     </head>
@@ -39,11 +45,11 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <img src="../IMAGEM/Banner1.png" style="width:100%; height: 500px;">
+                <img src="../IMAGEM/Banner1.png" style="width:100%; height: 369px;">
             </div>
 
             <div class="mySlides fade">
-                <img src="../IMAGEM/Banner2.png" style="width:100%; height: 500px;">
+                <img src="../IMAGEM/Banner2.png" style="width:100%; height: 369px;">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -54,7 +60,7 @@
 
 <!--//////////////////////////////////////////////////////// SEGMENTOS ////////////////////////////////////////////////////////-->
 
-        <article class="segmento1">
+        <article class="segmentos">
             <div id="Circulos" style="display: flex;">
                 <div id="Circulo1"></div>
                 <div id="Circulo2"></div>
@@ -68,15 +74,15 @@
                 financeiras ou até mesmo realizem ações que possam prejudicá-las.</p>
         </article>
 
-        <article class="segmento1">
+        <article id="segmento2">
             <div id="Circulos" style="display: flex;">
+                <div id="Circulo1"></div>
                 <div id="Circulo2"></div>
                 <div id="Circulo3"></div>
                 <div id="Circulo4"></div>
-                <div id="Circulo1"></div>
             </div>
 
-            <h1 class="Titulo">Notícias em Destaque</h1>
+            <h1 class="Titulo">Informações em Destaque</h1>
 
             <div id="ConjuntoInfo">
 
@@ -108,13 +114,30 @@
 
         </article>
 
-        <section style="display: flex;">
-            <img src="../IMAGEM/BannerFinal.png" alt="imgfinal" style="width: 60%;">
+        <section id="Relatos">
+            <div id="ImgFinal"></div>
 
             <div id="BlocoPreto">
-                <h2>
-                    asdalkdhkasdh alsdh
+                <div id="Circulos" style="display: flex;">
+                    <div id="Circulo1"></div>
+                    <div id="Circulo2"></div>
+                    <div id="Circulo3"></div>
+                    <div id="Circulo4"></div>
+                </div>
+
+                <h2 id="TituloBlocoPreto">
+                    Escreva sobre seu relato para ajudarmos
                 </h2>
+                
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="text" name="email" placeholder="Digite seu email" id="Email" required>
+                    <input type="submit" value="Enviar" id="Botao"/>
+                    <textarea name="message" placeholder="Digite seu relato" id="Mensagem" required></textarea>
+    
+                    <input type="text" name="honeypot" style="display: none;">
+                    <input type="hidden" name="accessKey" value="70ce7646-6269-4fdc-8eb6-e4c65bab4a99">
+                    <input type="hidden" name="redirectTo" value="https://warlem37.github.io/Fintec/HTML/index.html">
+                </form>
             </div>
         </section>
 
@@ -135,33 +158,44 @@
 
             <hr>
 
-            <div>
-                <img src="../IMAGEM/default-monochrome.png" alt="Logo" style="width: 190px;">
+            <div id="RodapeBaixo">
+                <img src="../IMAGEM/default-monochrome.png" alt="Logo" id="RodapeLogo">
 
-                <p>
+                <p id="RodapeBaixoTexto">
                     © Backdoor Todo o conteúdo, marcas, nomes e logotipos de terceiros são 
                     usados sob licença e permanecem propriedade de seus respectivos donos. Todos os direitos reservados
                 </p>
+
+                <div id="Vazio">
+
+                </div>
             </div>
         </footer>
 
 <!--//////////////////////////////////////////////////////// SCRIPT ////////////////////////////////////////////////////////-->
 
         <script>
-            let slideIndex = 0;
-            showSlides();
+            let slideIndex = 1;
+            showSlides(slideIndex);
 
-            function showSlides() {
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
             let i;
             let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
             slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 9000);
-        }
+            }
         </script>
     </body>
 </html> 
