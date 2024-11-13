@@ -12,7 +12,12 @@ body {
     font-family: monospace; 
     margin:0;
 }
-.segmento1{
+.segmentos{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+}
+#segmento2{
     display: block;
     width: 90%;
     margin-left: 5%;
@@ -66,6 +71,13 @@ body {
     background: linear-gradient(90deg,rgba(0, 0, 0, 0.938), rgb(0, 0, 0));
     width: 100%;
     color: white;
+    padding: 30px;
+}
+#TituloBlocoPreto{
+    font-family: "Source Sans 3";
+    font-weight: 900;
+    margin: 0%;
+    font-size: 35px;
 }
 #ConjuntoInfo{
     display:flex;
@@ -88,20 +100,70 @@ body {
     background-size: cover;
     width: 100%;
     height: 100%;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 .FundoInfo:hover{
     -webkit-filter: blur(20px);
     filter: blur(20px);
+}
+#Relatos{
+    display: flex;
+}
+#ImgFinal{
+    width: 55%;
+    background-image: url("../IMAGEM/aaa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#RodapeBaixoTexto{
+    width: 873px;
+}
+input{
+    height: 50px;
+    outline: none;
+}
+#Email{
+    width: 60%;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+}
+#Botao{
+    width: 150px;
+    border-radius: 100px;
+    font-size: 18px;
+    border: none;
+    color: grey;
+    height: 45px;
+    margin-left: 10px;
+}
+#Botao:hover{
+    cursor: pointer;
+    background-color: #F13800;
+    transition: .4s;
+    color: white;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+    width: 90%;
+    height: 90px;
 }
 
 /* --- //////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////// --- */
 
 header{
     background-color: black;
+    font-family: "Source Sans 3";
+    font-weight: 900;
     width: 100%;
     height: 50px;
-    position:sticky;
+    position: sticky;
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -206,7 +268,7 @@ img {
 
 .slideshow-container {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .prev, .next {
@@ -241,7 +303,7 @@ img {
 }
 
 @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+    .prev, .next {font-size: 11px}
 }
 
 /* --- //////////////////////////////////////////////////////// FOOTER //////////////////////////////////////////////////////// --- */
@@ -253,12 +315,14 @@ footer{
     background-color: black;
 }
 #RodapeCima{
-    margin-left: 45%;
+    margin-left: 80%;
+    margin-top: -40px;
     width: 30%;
 }
 #TituloRodape{
+    font-family: "Source Sans 3";
     font-size: 27px;
-    font-weight: bold;
+    font-weight: 900;
 }
 #RedeSocial{
     display: flex;
@@ -275,4 +339,16 @@ footer{
     display: flex;
     right: 20px;
     padding-bottom: 40px;
+}
+#RodapeBaixo{
+    display: flex;
+}
+#RodapeLogo{
+    width: 190px; 
+    height: 40px; 
+    margin: 20px 20vh 20px 0px;
+}
+#Vazio{
+    width: 190px;
+    height: 30px;
 }
