@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Vogue;
+    src: url(../FONTES/Vogue.ttf);
+}
+.title{
+    color: white;
+    margin-bottom: 20px;
+}
+.title h1{
+    width: 200px;
+}
+div{
+    color: white;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(130deg, #F13800, #4E2531);
+}
+
+.container{
+    width: 50%;
+    height: 80vh;
+    display: block;
+    box-shadow: #571f1be9 5px 5px, #571f1bd1 10px 10px, #571f1bb1 15px 15px, #571f1b9d 20px 20px, #571f1b43 25px 25px;
+    border-radius: 10px;
+    margin-left: 25%;
+    margin: 5vh 0px 0px 25%;
+}
+
+.form-imagem{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0608078f;
+    padding: 1rem;
+}
+
+.form-imagem text { 
+    width: 31rem;
+}
+
+form{
+    width:100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0608078f;
+    height: 75.2%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form-header{
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0px 0px 50px;
+    background-color: #0608078f;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.form-header h1{
+    font-family: 'Source sans 3';
+    font-weight: 900;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+}
+
+.login-button button{
+    border: none;
+    background-color: #F13800;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.login-button button:hover{
+    background-color: #4E2531;
+    transition: .3s;
+}
+
+.login-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #F13800;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 70%;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    width: 30vh;
+}
+
+.input-box input:hover{
+    background-color: #c9c9c9;
+    transition: .3s;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid #F13800;
+}
+
+.input-box label {
+    font-weight: 900;
+    color: white;
+    font-family: 'Source Sans 3'
+
+}
+
+.input-box input::placeholder{
+    color: #000000be;
+}
+.continue-button{
+    width: 50%;
+}
+.continue-button button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #F13800;
+    padding: 0.62rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.continue-button button:hover{
+    background-color: #4E2531;
+    transition: .3s;
+}
+
+.continue-button button a{
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width:1330px){
+    .form-imagem{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1064px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+}
+
+/* --- //////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////// --- */
+
+header{
+    font-family: "Source Sans 3";
+    font-weight: 900;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#TituloInicio{
+	display: inline-block;
+	flex-direction: column;
+	color: white;
+    justify-content: left;
+    line-height: 50%;
+}
+#BtnInicio{
+    margin-right: 15px;
+}
+.SubTituloInicio{
+    font-size: 17px;
+    margin-left: 6px;
+}
+.SubTituloInicio:hover{
+    color: #F13800;
+    transition: 0.5s;
+}
+a{
+    color: white;
+}
+
+li{
+    display: inline-block;
+}
+
+#NomeEmpresa{
+    display: inline-block;
+    color: white;
+    font-family: Vogue;
+    height: 20px;
+    margin-bottom: 0px;
+}
+#LogoEmpresa{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.bloco{
+    position: absolute;
+    right: 75vh;
+    bottom: 44px;
+    width: 240px;
+    height: 10px;
+    background-color: #F13800;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+}
+
+.bloco2{
+    position: absolute;
+    right: 50vh;
+    bottom: 44px;
+    width: 240px;
+    height: 10px;
+    background-color: #C3330E;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+}
+
+.bloco3{
+    position: absolute;
+    right: 25vh;
+    bottom: 44px;
+    width: 240px;
+    height: 10px;
+    background-color: #802B22;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+}
+
+.bloco4{
+    position: absolute;
+    right: 0vh;
+    bottom: 44px;
+    width: 240px;
+    height: 10px;
+    background-color: #4E2531;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+}
+
+.positivo{
+    -webkit-transform: skew(40deg);
+    -ms-transform: skew(40deg);
+    transform: skew(40deg);
+}
