@@ -68,7 +68,7 @@ body {
     height: 7px;
 }
 #BlocoPreto{
-    background: linear-gradient(90deg,rgba(0, 0, 0, 0.938), rgb(0, 0, 0));
+    background-color: black;
     width: 100%;
     color: white;
     padding: 30px;
@@ -95,7 +95,7 @@ body {
     overflow: hidden;
 }
 .FundoInfo{
-    background-image: url("../IMAGEM/Design\ sem\ nome.png");
+    background-image: url("../IMAGEM/bbbb.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -105,6 +105,13 @@ body {
 .FundoInfo:hover{
     -webkit-filter: blur(20px);
     filter: blur(20px);
+}
+.TextoInfo{
+    color: black;
+    font-family: "Source Sans 3";
+    font-weight: 900;
+    font-size: 25px;
+    padding: 10px;
 }
 #Relatos{
     display: flex;
@@ -332,6 +339,7 @@ footer{
     line-height: 0%;
 }
 .SubTituloRodape{
+    font-family: Vogue;
     color: white;
     font-size: 20px;
 }
