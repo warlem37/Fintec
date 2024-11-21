@@ -95,9 +95,8 @@ body {
     overflow: hidden;
 }
 .FundoInfo{
-    background-image: url("../IMAGEM/bbbb.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgb(241,56,0);
+    background: radial-gradient(circle, rgba(241,56,0,1) 0%, rgba(195,51,14,1) 33%, rgba(78,37,49,1) 100%);
     width: 100%;
     height: 100%;
     transition: all .5s ease;
