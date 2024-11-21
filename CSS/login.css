@@ -1,22 +1,28 @@
+@font-face {
+    font-family: Vogue;
+    src: url(../FONTES/Vogue.ttf);
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: monospace; 
     margin: 0;
+    background: linear-gradient(130deg, #4E2531, #F13800);
 }
 .login-container {
-    background-color: white;
+    margin-left: 40%;
+    margin-top: 15%;
+    background-color: #0608078f;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: #571f1be9 5px 5px, #571f1bd1 10px 10px, #571f1bb1 15px 15px, #571f1b9d 20px 20px, #571f1b43 25px 25px;
     width: 300px;
+    color: white;
 }
 h2 {
+    font-family: 'Source Sans 3';
     text-align: center;
     margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 900;
 }
 .input-field {
     width: 100%;
@@ -26,19 +32,127 @@ h2 {
     border-radius: 4px;
 }
 .input-field:focus {
-    border-color: #4caf50;
+    border-color: #C3330E;
     outline: none;
 }
 .login-btn {
     width: 100%;
     padding: 10px;
-    background-color: #4caf50;
+    background-color: #F13800;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    font-family: Vogue;
 }
 .login-btn:hover {
-    background-color: #45a049;
+    transition: .3s;
+    background-color: #4E2531;
+}
+
+header{
+    font-family: "Source Sans 3";
+    font-weight: 900;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#TituloInicio{
+	display: inline-block;
+	flex-direction: column;
+	color: white;
+    justify-content: left;
+    line-height: 50%;
+}
+#BtnInicio{
+    margin-right: 15px;
+}
+a{
+    color: white;
+}
+
+li{
+    display: inline-block;
+}
+
+#NomeEmpresa{
+    display: inline-block;
+    color: white;
+    font-family: Vogue;
+    height: 20px;
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
+#LogoEmpresa{
+    padding-bottom: 9px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.bloco{
+    position: absolute;
+    right: 75vh;
+    bottom: 44px;
+    width: 240px;
+    height: 10px;
+    background-color: #F13800;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+}
+
+.bloco2{
+    position: absolute;
+    right: 50vh;
+    bottom: 44px;
+    width: 240px;
+    height: 10px;
+    background-color: #C3330E;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+}
+
+.bloco3{
+    position: absolute;
+    right: 25vh;
+    bottom: 44px;
+    width: 240px;
+    height: 10px;
+    background-color: #802B22;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+}
+
+.bloco4{
+    position: absolute;
+    right: 0vh;
+    bottom: 44px;
+    width: 240px;
+    height: 10px;
+    background-color: #4E2531;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+}
+
+.positivo{
+    -webkit-transform: skew(40deg);
+    -ms-transform: skew(40deg);
+    transform: skew(40deg);
+}
+.SubTituloInicio{
+    font-size: 17px;
+    margin-left: 6px;
+}
+.SubTituloInicio:hover{
+    color: #F13800;
+    transition: 0.5s;
 }
