@@ -87,7 +87,8 @@ body {
     margin-bottom: 50px;
 }
 .Info{
-    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(28, 28, 28, 0.3) 10px 10px, rgba(89, 89, 89, 0.2) 15px 15px, rgba(142, 142, 142, 0.1) 20px 20px, rgba(220, 220, 220, 0.05) 25px 25px;
+    background-color: #4E2531;
+    box-shadow: rgb(78, 37, 49) 5px 5px, rgba(78, 37, 49, 0.5) 10px 10px, rgba(78, 37, 49, 0.2) 15px 15px, rgba(78, 37, 49, 0.1) 20px 20px, rgba(78, 37, 49, 0.05) 25px 25px;
     width: 37vh;
     height: 100%;
     border-radius: 20px;
@@ -95,15 +96,27 @@ body {
     overflow: hidden;
 }
 .FundoInfo{
-    background: rgb(241,56,0);
-    background: radial-gradient(circle, rgba(241,56,0,1) 0%, rgba(195,51,14,1) 33%, rgba(78,37,49,1) 100%);
+    background: rgb(78,37,49);
+    background: linear-gradient(320deg, rgba(78,37,49,1) 6%, rgba(128,43,34,1) 35%, rgba(241,56,0,1) 100%);
     width: 100%;
     height: 100%;
     transition: all .5s ease;
+    text-decoration: none;
 }
 .FundoInfo:hover{
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+.Info a{
+    text-decoration: none;
+}
+.FundoInfo p{
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+    padding: 50% 10% 0% 10%;
+    font-family: 'Source Sans 3';
+    font-weight: 900;
 }
 #Relatos{
     display: flex;
@@ -324,12 +337,16 @@ footer{
     font-weight: 900;
     width: 120px;
 }
-#RedeSocial{
+.RedeSocial{
     display: flex;
     width: 180px;
     text-decoration: none;
     height: 30px;
-    line-height: 0%;
+    margin-bottom: 10px;
+}
+.RedeSocial p{
+    margin-top: 5%;
+    margin-left: 5%;
 }
 .SubTituloRodape{
     font-family: Vogue;
@@ -337,7 +354,7 @@ footer{
     font-size: 20px;
 }
 #SegmentoRodape{
-    display: flex;
+    display: block;
     right: 20px;
     padding-bottom: 40px;
     width: 120px;
