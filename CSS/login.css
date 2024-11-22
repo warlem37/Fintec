@@ -8,12 +8,11 @@ body {
     background: linear-gradient(130deg, #4E2531, #F13800);
 }
 .login-container {
-    margin-left: 40%;
-    margin-top: 15%;
+    margin: 12% 0% 10% 40%;
     background-color: #0608078f;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: #571f1be9 5px 5px, #571f1bd1 10px 10px, #571f1bb1 15px 15px, #571f1b9d 20px 20px, #571f1b43 25px 25px;
+    box-shadow: rgb(78, 37, 49) 5px 5px, rgba(78, 37, 49, 0.5) 10px 10px, rgba(78, 37, 49, 0.2) 15px 15px, rgba(78, 37, 49, 0.1) 20px 20px, rgba(78, 37, 49, 0.05) 25px 25px;
     width: 300px;
     color: white;
 }
@@ -29,19 +28,21 @@ h2 {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 .input-field:focus {
     border-color: #C3330E;
     outline: none;
 }
 .login-btn {
-    width: 100%;
-    padding: 10px;
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+    padding: 15px;
     background-color: #F13800;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
     font-family: Vogue;
@@ -155,4 +156,58 @@ li{
 .SubTituloInicio:hover{
     color: #F13800;
     transition: 0.5s;
+}
+
+/* --- //////////////////////////////////////////////////////// FOOTER //////////////////////////////////////////////////////// --- */
+
+footer{
+    padding: 20px;
+    margin-bottom: -20px;
+    color: white;
+    background-color: black;
+}
+#RodapeCima{
+    margin-left: 80%;
+    margin-top: -40px;
+    width: 20%;
+}
+#TituloRodape{
+    font-family: "Source Sans 3";
+    font-size: 27px;
+    font-weight: 900;
+    width: 120px;
+}
+.RedeSocial{
+    display: flex;
+    width: 180px;
+    text-decoration: none;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.RedeSocial p{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.SubTituloRodape{
+    font-family: Vogue;
+    color: white;
+    font-size: 20px;
+}
+#SegmentoRodape{
+    display: block;
+    right: 20px;
+    padding-bottom: 40px;
+    width: 120px;
+}
+#RodapeBaixo{
+    display: flex;
+}
+#RodapeLogo{
+    width: 190px; 
+    height: 40px; 
+    margin: 20px 20vh 20px 0px;
+}
+#Vazio{
+    width: 190px;
+    height: 30px;
 }
