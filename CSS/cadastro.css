@@ -25,10 +25,10 @@ body {
     width: 50%;
     height: 80vh;
     display: block;
-    box-shadow: #571f1be9 5px 5px, #571f1bd1 10px 10px, #571f1bb1 15px 15px, #571f1b9d 20px 20px, #571f1b43 25px 25px;
+    box-shadow: rgb(78, 37, 49) 5px 5px, rgba(78, 37, 49, 0.5) 10px 10px, rgba(78, 37, 49, 0.2) 15px 15px, rgba(78, 37, 49, 0.1) 20px 20px, rgba(78, 37, 49, 0.05) 25px 25px;
     border-radius: 10px;
-    margin-left: 25%;
-    margin: 5vh 0px 0px 25%;
+    margin: 5vh 0px 10% 25%;
+    background: #0608078f;
 }
 
 .form-imagem{
@@ -36,7 +36,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0608078f;
+    
     padding: 1rem;
 }
 
@@ -50,7 +50,6 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #0608078f;
     height: 75.2%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -60,7 +59,6 @@ form{
     justify-content: space-between;
     width: 100%;
     padding: 50px 0px 0px 50px;
-    background-color: #0608078f;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -302,4 +300,57 @@ li{
     -webkit-transform: skew(40deg);
     -ms-transform: skew(40deg);
     transform: skew(40deg);
+}
+
+
+footer{
+    padding: 20px;
+    margin-bottom: -20px;
+    color: white;
+    background-color: black;
+}
+#RodapeCima{
+    margin-left: 80%;
+    margin-top: -40px;
+    width: 20%;
+}
+#TituloRodape{
+    font-family: "Source Sans 3";
+    font-size: 27px;
+    font-weight: 900;
+    width: 120px;
+}
+.RedeSocial{
+    display: flex;
+    width: 180px;
+    text-decoration: none;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.RedeSocial p{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.SubTituloRodape{
+    font-family: Vogue;
+    color: white;
+    font-size: 20px;
+}
+#SegmentoRodape{
+    display: block;
+    right: 20px;
+    padding-bottom: 40px;
+    width: 120px;
+}
+#RodapeBaixo{
+    display: flex;
+}
+#RodapeLogo{
+    width: 190px; 
+    height: 40px; 
+    margin: 20px 20vh 20px 0px;
+}
+#Vazio{
+    width: 190px;
+    height: 30px;
 }
