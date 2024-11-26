@@ -38,10 +38,12 @@
             </form>
         </div>
 <?php
-        if(insert($_POST['submit'])){
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-           }
+session_start();
+        
+        if(insert($_POST['username'], $_POST['password'])){
+            if ($_POST['username'] == 'Cleide' && $_POST['password']== 'Sem')
+            $_SESSION['username'] = $_POST['username'];
+            
 ?>
 <!--//////////////////////////////////////////////////////// FOOTER ////////////////////////////////////////////////////////-->
 
