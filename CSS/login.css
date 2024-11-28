@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box
+}
 @font-face {
     font-family: Vogue;
     src: url(../FONTES/Vogue.ttf);
@@ -13,7 +16,7 @@ body {
     padding: 30px;
     border-radius: 8px;
     box-shadow: rgb(78, 37, 49) 5px 5px, rgba(78, 37, 49, 0.5) 10px 10px, rgba(78, 37, 49, 0.2) 15px 15px, rgba(78, 37, 49, 0.1) 20px 20px, rgba(78, 37, 49, 0.05) 25px 25px;
-    width: 300px;
+    width: 330px;
     color: white;
 }
 h2 {
@@ -94,6 +97,7 @@ li{
     display: inline-block;
     margin-left: 10px;
     margin-top: 0px;
+    text-decoration: none;
 }
 
 .bloco{
