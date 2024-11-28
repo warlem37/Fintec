@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<!--//////////////////////////////////////////////////////// HEAD ////////////////////////////////////////////////////////-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/paginaUser.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="../IMAGEM/LogoBackdoor.png" type="image/png">
+        <title>Backdoor: Segurança, confiabilidade e suporte</title>
+    </head>
+
+<!--//////////////////////////////////////////////////////// BODY ////////////////////////////////////////////////////////-->
+
+    <body>
+
+        <header>
+            <article id="TituloInicio">
+                <a href="./index.html" id="LogoEmpresa"><img src="../IMAGEM/LogoTransp.png" alt="Logo" style="height: 30px; width: 30px;">
+                    <h1 id="NomeEmpresa">Backdoor</h1>
+                </a>
+            </article>
+
+            <div class="bloco4"></div>
+            <div class="bloco positivo"></div>
+            <div class="bloco2 positivo"></div>
+            <div class="bloco3 positivo"></div>
+            
+
+            <ul id="BtnInicio">
+                <a href="./login.html" class="SubTituloInicio"><li>Login</li></a>
+                <a href="./cadastro.html" class="SubTituloInicio"><li>Cadastro</li></a> 
+            </ul>
+        </header>
+
+
+<!--//////////////////////////////////////////////////////// FOOTER ////////////////////////////////////////////////////////-->
+
+        <div id="userContainer">
+            <div id="fundoContainer">
+                <div id="Circulos" style="display: flex;">
+                    <div id="Circulo1"></div>
+                    <div id="Circulo2"></div>
+                    <div id="Circulo3"></div>
+                    <div id="Circulo4"></div>
+                </div>
+
+                <h2 id="tituloUser">Usuario</h2>
+
+                    <div id="infoUser">
+                        <div style="height: 50vh; margin-right: 2%; width: 17vh;">
+                            <div id="imgUser">
+                            </div>
+
+                            <button class="btn1">
+                                <a href="./index.html" style="text-decoration: none;">Pagina Inicial</a>
+                            </button>
+
+                            <button class="btn1">
+                                <a href="#" style="text-decoration: none;">Saiba mais</a>
+                            </button>
+                        </div>
+
+                        <div id="infoPessoal">
+                            <h1>
+                                Nome: admin
+                            </h1>
+
+                            <h1>
+                                Email: admin123@gmail.com
+                            </h1>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+
+<!--//////////////////////////////////////////////////////// FOOTER ////////////////////////////////////////////////////////-->
+
+        <footer>
+            
+            <div id="RodapeCima">
+                    <h2 id="TituloRodape">Siga-nos</h2>
+
+                <div id="SegmentoRodape">
+                    <a href="https://www.instagram.com/backdoor_3ipi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="RedeSocial">
+                        <img src="../IMAGEM/LogoIG.png" alt="Instagram" style="width: 33px; height: 30px;">
+                        <p class="SubTituloRodape">@backdoor_3ipi</p>
+                    </a>
+
+                    <div class="RedeSocial">
+                        <img src="../IMAGEM/gmaillogo.png" alt="Email" style="width: 26px; height: 25px; margin-left: 5px;">
+                        <p class="SubTituloRodape" style="margin-left: 16px;">backdoor3ipi@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="RodapeBaixo">
+                <img src="../IMAGEM/default-monochrome.png" alt="Logo" id="RodapeLogo">
+
+                <p id="RodapeBaixoTexto">
+                    © Backdoor Todo o conteúdo, marcas, nomes e logotipos de terceiros são 
+                    usados sob licença e permanecem propriedade de seus respectivos donos. Todos os direitos reservados.
+                </p>
+
+                <div id="Vazio">
+
+                </div>
+            </div>
+        </footer>
+
+<!--//////////////////////////////////////////////////////// SCRIPT ////////////////////////////////////////////////////////-->
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+            }
+        </script>
+    </body>
+</html> 
